@@ -1,0 +1,487 @@
+@import url('color.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  font-family: 'poppins';
+
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 0;
+
+
+  background-color: #004030;
+
+
+
+
+}
+
+header {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  /* background: #c5620b; */
+}
+
+header figure
+disp
+
+.navbar {
+  display: flex;
+  /* flex-direction: column; */
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo {
+  /* position: absolute; */
+  left: 1rem;
+  font-weight: 500;
+  font-size: 3rem;
+  color: white;
+
+}
+
+/* Base hamburger */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white
+}
+
+
+.hamburger {
+  display: block;
+  z-index: 999;
+  /* stay on top */
+}
+
+.nav-list {
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  /* Adjust based on your navbar height */
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 4em 2em;
+  gap: 2rem;
+
+  background: linear-gradient(to bottom right,
+      #fefee3 80%,
+      #a7c957 100%);
+
+  border-top: 2px solid #a7c957;
+  display: none;
+  z-index: 998;
+  list-style: none;
+
+}
+
+.nav-list.active {
+  display: flex;
+}
+
+.nav-list li {
+  text-decoration: none;
+}
+
+
+
+
+section {
+  min-height: 100vh;
+  /* at least full screen */
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home {
+  background: #d2e2ad;
+  border-radius: 1.5em;
+  margin: 2em;
+  background: linear-gradient(#d2e2ad, white, rgb(241, 222, 187))
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+  flex-wrap: wrap;
+
+
+}
+
+.about-me>div {
+  flex: 1;
+  margin: 0;
+  min-width: 150px;
+  order: 2;
+}
+
+.about-me h3 {
+  font-size: .7rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.about-me h4 {
+  font-size: 1.5rem;
+  color: #c5620b;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+.about-me p {
+  font-size: .8rem;
+  line-height: 1.6;
+  color: #444;
+  padding: .5em;
+  border-left: 5px solid #c5620b;
+  border-left-style: double;
+  border-top: 5px solid #c5620b;
+  border-top-left-radius: 2em;
+  border-top-style: double;
+
+
+}
+
+.about-me figure {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 50%;
+  order: 1;
+
+
+
+}
+
+.about-me figure>div {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 7px solid #c5620b;
+  border-style: double;
+}
+
+.about-me figure img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+
+
+
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: .8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.download-btn {
+  background-color: white;
+  color: #c5620b;
+  border: 2px solid #c5620b;
+  ;
+
+}
+
+.project-btn {
+  background-color: #c5620b;
+  ;
+  border: 2px solid#c5620b;
+  color: white
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background-color: #904707;
+  color: white;
+
+}
+
+/*******************************  WORKS *****************************/
+.project-grid {
+  background:
+    radial-gradient(circle at top left, #ddebbb 0%, transparent 30%),
+    radial-gradient(circle at top right, #eaefde 0%, transparent 30%),
+    radial-gradient(circle at bottom left, #ccd8b1 0%, transparent 30%),
+    radial-gradient(circle at bottom right, #d2e0b4 0%, transparent 30%),
+    #fefee3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5em;
+
+
+}
+
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #c5620b;
+  font-size: 24px;
+  padding-bottom: .1em;
+}
+
+
+
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
+.project-image {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.6);
+  justify-content: center;
+
+
+
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+  gap: .7em;
+  margin: 0;
+
+
+
+
+
+}
+
+.project-content p {
+  text-align: center;
+  font-size: .8rem;
+  line-height: 1.6;
+  padding: .5em;
+
+}
+
+
+
+.project-content button {
+  color: #c5620b;
+  border: 3px solid #c5620b;
+  padding: .5em;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet & Desktop */
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+  }
+
+  .logo {
+    margin-bottom: 0;
+    position: static;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0 auto;
+  }
+
+  .nav-list a:hover {
+    background-color: #fefee3;
+    text-decoration: underline;
+    border: 1px solid #245501;
+    border-radius: 1.3em;
+    padding: .8em;
+  }
+
+
+
+
+
+  .about-me {
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  .about-me figure>div {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: none;
+
+
+
+  }
+
+
+  .about-me h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+
+  .about-me figure img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+
+  .project-grid {
+    justify-content: center;
+    font-size: 1.23rem;
+    gap: 7em;
+  }
+
+  .project-card {
+
+    gap: .5em;
+    flex-direction: row;
+    padding: 1rem;
+
+  }
+
+  h2 {
+    color: #c5620b;
+    font-size: 32px;
+    padding-bottom: 1rem;
+  }
+
+  .project-image {
+    display: flex;
+    max-width: 50%;
+  }
+
+
+
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .project-content button {
+    background-color: white;
+    font-size: 16px;
+    border-radius: .5em;
+    padding: 1em 1em;
+  }
+
+
+  .project-content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+
+
+  }
+
+
+  .project-content p {
+    font-size: 1.3rem;
+  }
+
+  .project-card .project-content {
+    order: 1;
+  }
+
+  .project-card .project-image {
+    order: 2;
+  }
+
+  /* Alternate: Image on left for every even card */
+  .project-card:nth-child(even) .project-content {
+    order: 2;
+  }
+
+  .project-card:nth-child(even) .project-image {
+    order: 1;
+  }
+
+
+
+
+}

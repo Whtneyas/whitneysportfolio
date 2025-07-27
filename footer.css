@@ -1,0 +1,72 @@
+.footer-contact {
+  
+    background-color: #004526;
+    padding: 4em 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-contact h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+  }
+  
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    max-width: 500px;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-form label {
+    font-weight: bold;
+    color: #fefee3;
+    text-align: left;
+    
+  }
+  
+  .footer-form input,
+  .footer-form textarea {
+    padding: 0.8em;
+    border: 2px white;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    color: #333;
+    resize: none;
+  }
+  
+  .footer-form input:focus,
+  .footer-form textarea:focus {
+    outline: none;
+    border-color: #c5620b;
+  }
+  
+  .footer-form button {
+    background-color: #c5620b;
+    color: white;
+    border: none;
+    padding: 1em;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer-form button:hover {
+    background-color: #a34e08;
+  }
+  
+  .footer-copy {
+    margin-top: 2em;
+    font-size: 0.9rem;
+    color: #333;
+    opacity: 0.7;
+  }
+  
