@@ -4,9 +4,8 @@
 #skills {
     display:flex;
     gap: 5em;
-    background: linear-gradient(white, );
-     /* background-color:  #454B1B, ; */
-     background-color:#a7c957 ;
+    background: rgb(93, 8, 102);
+  
      
    
 }

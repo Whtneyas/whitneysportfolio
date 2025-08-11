@@ -16,7 +16,9 @@ body {
   padding: 0;
 
 
-  background-color: #004030;
+
+  /* background-color: #004030; */
+  background-color:  rgb(238, 236, 212);
 
 
 
@@ -24,21 +26,48 @@ body {
 }
 
 header {
-  padding: 0;
   display: flex;
   flex-direction: column;
+  margin: 0;
 
   /* background: #c5620b; */
 }
 
-header figure
-disp
+header figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+header figure h1 {
+  color: white;
+  order: 2;
+  text-align: left;
+  font-size: 14px;
+  text-decoration: overline;
+
+}
+
+header figure img {
+  max-width: 30%;
+  padding: 0;
+  margin: 0;
+}
+
 
 .navbar {
   display: flex;
-  /* flex-direction: column; */
   text-align: center;
-  padding: 1rem;
+  padding: 1em;
+  background-color: rgb(68, 5, 68);
+
+
 }
 
 .logo {
@@ -98,27 +127,27 @@ disp
 }
 
 
-
-
 section {
   min-height: 100vh;
-  /* at least full screen */
-  padding: 4rem 2rem;
+  /* padding: 1rem 2rem; */
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 #home {
-  background: #d2e2ad;
+  display: flex;
+  justify-content: center;
   border-radius: 1.5em;
-  margin: 2em;
-  background: linear-gradient(#d2e2ad, white, rgb(241, 222, 187))
+  margin: 1em;
+
 }
 
 .about-me {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   max-width: 1200px;
@@ -165,12 +194,12 @@ section {
 .about-me figure {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  align-items: center;
   min-width: 50%;
-  order: 1;
+  margin: 0;
 
-
-
+  order: 1
 }
 
 .about-me figure>div {
@@ -238,10 +267,10 @@ section {
 /*******************************  WORKS *****************************/
 .project-grid {
   background:
-    radial-gradient(circle at top left, #ddebbb 0%, transparent 30%),
-    radial-gradient(circle at top right, #eaefde 0%, transparent 30%),
-    radial-gradient(circle at bottom left, #ccd8b1 0%, transparent 30%),
-    radial-gradient(circle at bottom right, #d2e0b4 0%, transparent 30%),
+    radial-gradient(circle at top left, #f1b459 0%, transparent 30%),
+    radial-gradient(circle at top right, #ebaff9 0%, transparent 30%),
+    radial-gradient(circle at bottom left, #ebaff9 0%, transparent 30%),
+    radial-gradient(circle at bottom right,  #f1b459 0%, transparent 30%),
     #fefee3;
 
   display: flex;
@@ -347,48 +376,143 @@ h4 {
 
 /* Tablet & Desktop */
 @media screen and (min-width: 768px) {
+
+  header {
+    display: flex;
+    justify-content: center;
+
+  }
+
   .navbar {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2em;
+    padding: 0em 1em;
+
+
   }
 
-  .logo {
-    margin-bottom: 0;
-    position: static;
+
+
+
+  header figure {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0;
+
+
+  }
+
+  header figure h1 {}
+
+  header figure img {
+    width: 20%;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .hamburger {
+    display: none;
+    /* hide hamburger */
   }
 
   .nav-list {
+    display: flex !important;
+    position: static;
     flex-direction: row;
-    gap: 2rem;
-    margin: 0 auto;
+    height: auto;
+    width: auto;
+    padding: 0;
+    gap: 1.5rem;
+    background: none;
+    border-top: none;
+
+
   }
 
-  .nav-list a:hover {
-    background-color: #fefee3;
-    text-decoration: underline;
-    border: 1px solid #245501;
-    border-radius: 1.3em;
-    padding: .8em;
+  .nav-list li {
+
+    display: inline-block;
+    list-style: none;
+    font-weight: lighter;
+    border: 1px solid white;
+    padding: .5em;
+    border-radius: .2em;
+    font-weight: 100 !important;
+
+    /* background-color:palegoldenrod */
+
   }
 
 
+  .nav-list li a {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
 
 
+
+
+  }
+
+
+  .nav-list li:hover {
+    background-color: palegoldenrod;
+
+  }
+
+  .nav-list li a:hover {
+    color: rgb(68, 5, 68);
+    font-weight: 500;
+  }
+
+
+  #home {
+    justify-content: center;
+    align-items: center;
+    
+  }
 
   .about-me {
     flex-direction: row;
+
+    gap: 0;
     text-align: center;
     justify-content: center;
 
   }
 
+  .about-me figure {
+    /* margin:0;
+    background-color:#ebf3da ;
+     padding: 10em;
+     margin: 0; */
+
+    /* height: 600px;
+  aspect-ratio: 1;
+  clip-path: shape(from 50% 91%,line to 90% 50%,arc to 50% 9% of 1%,arc to 10% 50% of 1%);
+  background: #cc333f; */
+
+    width: 250px;
+    aspect-ratio: 1.33;
+    clip-path: shape(from 97.54% 10.91%, curve by -10.93% -10.76% with -2.11% -5.38%/-6.13% -9.91%, curve by -15.78% 7.98% with -5.83% -1.03%/-11.32% 3.26%, curve by -14.36% 12.27% with -4.46% 4.71%/-8.72% 10.15%, curve by -30.93% -4.53% with -10.05% 3.75%/-20.44% -4.47%, curve to 7.15% 25.66% with 18.67% 15.81%/11.86% 19.43%, curve by 19.9% 70.23% with -17.4% 23.09%/-0.05% 60.08%, curve by 49.46% -9.07% with 16.08% 8.22%/35.34% 3.57%, curve by 23.23% -53.55% with 13.43% -12.03%/21.71% -33.18%, curve by 0.25% -4.77% with 0.1% -1.63%/0.2% -3.2%, curve to 97.54% 10.91% with 100.09% 22.46%/99.64% 16.29%, close);
+
+
+    background: linear-gradient(60deg in hsl, #d75252, #852b4f);
+    transform: rotate(-20deg)
+  }
+
   .about-me figure>div {
     width: 500px;
     height: 500px;
-    background-color: white;
     border: none;
+    background: none;
+    border-radius: none;
+
 
 
 
