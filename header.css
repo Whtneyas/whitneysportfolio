@@ -1,0 +1,211 @@
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  /* background: #c5620b; */
+}
+
+header figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+header figure h1 {
+  color: white;
+  order: 2;
+  text-align: left;
+  font-size: 14px;
+  text-decoration: overline;
+
+}
+
+header figure img {
+  max-width: 20%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.navbar {
+  display: flex;
+  text-align: center;
+  padding: 1em;
+  background-color: rgb(68, 5, 68);
+
+
+}
+
+.logo {
+  /* position: absolute; */
+  left: 1rem;
+  font-weight: 500;
+  font-size: 3rem;
+  color: white;
+
+}
+
+/* Base hamburger */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white
+}
+
+
+.hamburger {
+  display: block;
+  z-index: 999;
+}
+
+.nav-list {
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  top: 135px;
+  right: 0;
+  width: 50%;
+  height: 30vh;
+  padding: 2em;
+  gap: 2rem;
+  display: none;
+  z-index: 998;
+  list-style: none;
+  background-color: rgb(238, 236, 212);
+  border-radius: 5px;
+  box-shadow:  -6px 0 12px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.nav-list.active {
+  display: flex;
+}
+
+.nav-list li {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 320;
+  border-radius: .2em;
+
+
+
+  /* background-color:palegoldenrod */
+}
+
+.nav-list li a {
+  text-decoration: none;
+  text-align: right;
+  color: #c5620b
+}
+
+
+
+
+
+/* Tablet & Desktop */
+@media screen and (min-width: 768px) {
+
+  header {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
+
+
+  }
+
+
+
+
+  header figure {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0;
+
+
+  }
+
+  header figure h1 {}
+
+  header figure img {
+    width: 20%;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .hamburger {
+    display: none;
+    /* hide hamburger */
+  }
+
+  .nav-list {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    padding: 0;
+    gap: 1.5rem;
+    background: none;
+    border-top: none;
+
+
+  }
+
+  .nav-list li {
+
+    display: inline-block;
+    list-style: none;
+    font-weight: lighter;
+    border: 1px solid white;
+    padding: .5em;
+    border-radius: .2em;
+    font-weight: 100 !important;
+
+    /* background-color:palegoldenrod */
+
+  }
+
+
+  .nav-list li a {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+
+
+
+
+  }
+
+
+  .nav-list li:hover {
+    background-color: palegoldenrod;
+
+  }
+
+  .nav-list li a:hover {
+    color: rgb(68, 5, 68);
+    font-weight: 500;
+  }
+}

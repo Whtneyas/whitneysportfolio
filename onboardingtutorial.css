@@ -1,0 +1,131 @@
+body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:#fff9ff;
+}
+
+
+/* PROJECT INFO AND IMAGE*/
+
+h1{
+      font-size: .5rem;
+}
+
+.project-header {
+      padding: 30px;
+      background-color: rgb(245, 243, 230);
+      border-radius: 18px;
+      margin: 1em;
+      box-shadow: 0 8px 32px 0 rgba(60, 40, 10, 0.18), 0 1.5px 6px 0 rgba(197, 98, 11, 0.08);
+      background: linear-gradient(135deg, #f8e6c1 0%, #f7eaf7 100%);
+}
+
+.project-header h1 {
+      font-size: 3rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #c5620b;
+
+
+}
+
+.intro-image {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      align-items: center;
+      background: linear-gradient(135deg, #f1b45922 0%, #ebaff922 100%);
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(197, 98, 11, 0.08);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.intro-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.project-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2em;
+      flex-wrap: wrap;
+      font-size: 10px;
+      border-top: 1px solid black;
+
+}
+
+.project-info,
+ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 10px 0 0;
+}
+
+.project-info ul li:first-of-type {
+      font-weight: bold;
+}
+
+
+
+
+
+main {
+      padding: 20px;
+      margin: 1em;
+      border-radius: 8px;
+}
+
+h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #c5620b;
+      font-weight: 400;
+      /* Lighter than 400, but still readable */
+}
+
+.project-section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+}
+
+.project-intro {
+      padding: 1.5em 2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(197, 98, 11, 0.06);
+      font-size: 1rem;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 1.5em;
+      line-height: 1.7;
+      transition: box-shadow 0.3s;
+      border-left: 6px solid #c5620b;
+}
+
+.project-client {}
+
+
+.project-tasks ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 0;
+}
+
+.project-research p {
+      margin: 5px 0;
+      line-height: 1.6;
+}
