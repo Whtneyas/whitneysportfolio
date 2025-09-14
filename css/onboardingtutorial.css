@@ -1,15 +1,14 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  scroll-behavior: smooth;
-  font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    /* font-family: 'poppins'; */
 
 }
 
 body {
-  font-family: sans-serif;
   line-height: 1.5;
   padding: 0;
 
@@ -32,7 +31,7 @@ body {
 
 .project-header h1 {
       font-size: 3rem;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
       color: #c5620b;
 
 
@@ -115,7 +114,6 @@ h2 {
       box-shadow: 0 2px 8px rgba(197, 98, 11, 0.06);
       font-size: 1rem;
       color: #333;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin-bottom: 1.5em;
       line-height: 1.7;
       transition: box-shadow 0.3s;
