@@ -81,14 +81,14 @@ header figure img {
   flex-direction: column;
   justify-content: end;
   position: absolute;
-  top: 135px;
-  right: 0;
+  top: 30px;
+  right: 3em;
   width: 50%;
-  height: 30vh;
+  height: 60vh;
   padding: 2em;
   gap: 2rem;
   display: none;
-  z-index: 998;
+  z-index: 999;
   list-style: none;
   background-color: rgb(238, 236, 212);
   border-radius: 5px;
@@ -103,7 +103,7 @@ header figure img {
 
 .nav-list li {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 320;
   border-radius: .2em;
 

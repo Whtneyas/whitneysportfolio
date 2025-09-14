@@ -16,7 +16,7 @@
     gap: 3em;
     background: rgb(93, 8, 102);
     font-size: 14px;
-    padding: 2em
+    padding: 4em 2em;
 }
 
 .project-heading-skills {
@@ -56,4 +56,25 @@ ul.cloud li {
     border-radius: 2em;
     padding: .5em 1em;
     font-size: .9rem;
+}
+
+
+
+
+/* #skills {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    background: rgb(93, 8, 102);
+    font-size: 14px;
+ 
+} */
+
+@media (min-width: 768px) {
+    #skills {
+        flex-direction: column;
+        padding: 0 2em;
+        gap: 2em;
+        padding: 0 20em;
+    }
 }
