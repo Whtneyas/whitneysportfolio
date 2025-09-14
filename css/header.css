@@ -9,8 +9,8 @@ header {
 header figure {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 0;
   padding: 0;
   margin: 0;
@@ -143,7 +143,7 @@ header figure img {
 
   }
 
-  header figure h1 {}
+
 
   header figure img {
     width: 20%;

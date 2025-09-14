@@ -1,9 +1,14 @@
+const hamburgerButton = document.querySelector('button.hamburger');
+const navigationList = document.querySelector('nav ul');
 
+hamburgerButton.addEventListener('click', () => {
+  navigationList.classList.toggle('active');
+});
 
-  const hamburger = document.querySelector('.hamburger');
-  const navList = document.querySelector('.nav-list');
+// Load header content from external HTML file
 
-  hamburger.addEventListener('click', () => {
-    navList.classList.toggle('active');
+fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
   });
-

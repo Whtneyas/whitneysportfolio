@@ -2,17 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
   font-family: 'poppins';
 
 }
 
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 0;
+
+  /* background-color: #004030; */
+  background-color: rgb(238, 236, 212);
+
+}
 
 /* PROJECT INFO AND IMAGE*/
 
-h1{
-      font-size: .5rem;
-}
 
 .project-header {
       padding: 30px;
