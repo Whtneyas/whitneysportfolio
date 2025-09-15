@@ -9,14 +9,23 @@
 }
 header {
   display: flex;
+  position: fixed;
   flex-direction: column;
   margin: 0;
+  top:0;
+  right:0;
+  left: 0;
+  z-index: 999;
+
 
   /* background: #c5620b; */
 }
 
+
+
 header figure {
   display: flex;
+
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
