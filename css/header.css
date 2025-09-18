@@ -90,10 +90,10 @@ header figure img {
   flex-direction: column;
   justify-content: end;
   position: absolute;
-  top: 30px;
+  top:100px;
   right: 3em;
   width: 50%;
-  height: 60vh;
+  height: 30vh;
   padding: 2em;
   gap: 2rem;
   display: none;
