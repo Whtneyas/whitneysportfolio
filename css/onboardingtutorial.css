@@ -1,19 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
-    /* font-family: 'poppins'; */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+      /* font-family: 'poppins'; */
 
 }
 
 body {
-  line-height: 1.5;
-  padding: 0;
-
-  /* background-color: #004030; */
-  background-color: rgb(238, 236, 212);
+      display: flex;
+      flex-direction: column;
+      gap: 7em;
+      line-height: 1.5;
+      padding: 0;
+      background-color: rgb(238, 236, 212);
 
 }
 
@@ -21,7 +22,9 @@ body {
 
 
 .project-header {
-      padding: 30px;
+      position: relative;
+      top: 9em;
+      padding: 18px;
       background-color: rgb(245, 243, 230);
       border-radius: 18px;
       margin: 1em;
@@ -31,9 +34,7 @@ body {
 
 .project-header h1 {
       font-size: 3rem;
-
       color: #c5620b;
-
 
 }
 
@@ -67,7 +68,7 @@ body {
       justify-content: space-between;
       padding: 2em;
       flex-wrap: wrap;
-      font-size: 10px;
+      font-size: 14px;
       border-top: 1px solid black;
 
 }
@@ -75,22 +76,37 @@ body {
 .project-info,
 ul {
       list-style: none;
-      padding: 0;
+      padding: 10px;
       margin: 0 10px 0 0;
 }
 
 .project-info ul li:first-of-type {
-      font-weight: bold;
+      font-weight: 800;
 }
 
 
 
-
-
 main {
+      display: flex;
+      flex-direction: column;
+      gap: 5em;
       padding: 20px;
       margin: 1em;
       border-radius: 8px;
+}
+
+.project-section1,
+.project-section2 {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+}
+
+.project-intro {
+      display: flex;
+      flex-direction: column;
+
 }
 
 h2 {
@@ -135,4 +151,60 @@ h2 {
 .project-research p {
       margin: 5px 0;
       line-height: 1.6;
+}
+
+.project-research figure {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      background-color: rgba(255, 255, 255, 0.288);
+      /* padding: 2em; */
+      border-radius: 1em;
+
+
+}
+
+
+.project-research img {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      background-color: rgba(255, 255, 255, 0.288);
+      padding: 2em;
+      border-radius: 1em;
+      box-shadow: 0 2px 8px rgba(197, 98, 11, 0.06);
+      border: 5px solid rgba(197, 98, 11, 0.2);
+}
+
+
+.project-sketch figure {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      padding: 1em;
+      border-radius: 1em;
+      border: 5px solid rgba(197, 98, 11, 0.2);
+
+}
+
+.project-sketch img {
+      width: 100%;
+      /* take up available space */
+      max-width: 100%;
+}
+
+.project-illustration figure {
+        display: flex;
+      justify-content: center;
+      background-color: white;
+      padding: 1em;
+      border-radius: 1em;
+      border: 5px solid rgba(197, 98, 11, 0.2);
+
+}
+
+.project-illustration  img {
+      width: 100%;
+      /* take up available space */
+      max-width: 100%;
 }
