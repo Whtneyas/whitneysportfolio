@@ -10,6 +10,7 @@
 
 body {
       display: flex;
+      justify-content: center;
       flex-direction: column;
       gap: 10em;
       line-height: 1.5;
@@ -41,7 +42,7 @@ body {
 .intro-image {
       display: flex;
       justify-content: center;
-      margin: 20px 0;
+      /* margin: 20px 0; */
       align-items: center;
       background: linear-gradient(135deg, #f1b45922 0%, #ebaff922 100%);
       padding: 24px;
@@ -64,7 +65,6 @@ body {
 
 .project-info {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       padding: 2em;
       flex-wrap: wrap;
@@ -117,17 +117,18 @@ h2 {
       /* Lighter than 400, but still readable */
 }
 
-main{
+main {
       background-color: white;
       padding: 3em;
       border-radius: none
 }
+
 .project-section {
       display: flex;
       flex-direction: column;
       gap: 20px;
       border-radius: none;
-    
+
 
 }
 
@@ -143,7 +144,6 @@ main{
       border-left: 6px solid #c5620b;
 }
 
-.project-client {}
 
 
 .project-tasks ul {
@@ -156,13 +156,13 @@ main{
 }
 
 .project-research p {
-     margin-top: 10px;
+      margin-top: 10px;
 }
 
 .project-research span {
-      font-family:cursive;
-  
-    
+      font-family: cursive;
+
+
 }
 
 .project-research ul {
@@ -215,16 +215,14 @@ main{
 
 }
 
-.project-sketch  p {
-      margin-top: 10px;
-}
+
 
 .project-sketch span {
-      font-family:cursive;
-  
-    
+      font-family: cursive;
+
+
 }
- 
+
 
 .project-sketch ul {
       display: flex;
@@ -248,7 +246,6 @@ main{
       justify-content: center;
       background-color: white;
       padding: 1em;
-
       border-radius: 1em;
       border: 5px solid rgba(197, 98, 11, 0.2);
 
@@ -261,114 +258,139 @@ main{
 }
 
 
-/**************** SWIPE GALLERY STYLES *****************/
-.swipe-gallery {
-      position: relative;
-      max-width: 100%;
-      margin: 1rem 0;
-}
-
-.sg-viewport {
-      overflow: hidden;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* keep a fixed viewport height but responsive if needed */
-      height: 320px;
-}
-
-.sg-track {
-      display: flex;
-      transition: transform 300ms ease;
-      will-change: transform;
-      align-items: center;
-      /* center slides vertically */
-      height: 100%;
-      gap: 12px;
-      /* small gap between visible items */
-      box-sizing: border-box;
-}
-
-/* Default: mobile — 1 item visible */
-.sg-track img {
-      width: 100%;
-      flex: 0 0 100%;
-      object-fit: contain;
-      display: block;
-      user-select: none;
-      -webkit-user-drag: none;
-}
-
-
-
-.sg-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      border: none;
-      padding: 0.5rem 0.8rem;
-      font-size: 1.4rem;
-      cursor: pointer;
-      border-radius: 4px;
-}
-
-.sg-prev {
-      left: 8px;
-}
-
-.sg-next {
-      right: 8px;
-}
-
-.sg-dots {
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-      margin-top: 0.6rem;
-}
-
-.sg-dots button {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      border: none;
-      background: #ccc;
-      padding: 0;
-      cursor: pointer;
-}
-
-.sg-dots button[aria-selected="true"] {
-      background: #333;
-}
 .final-resullts {
       display: grid;
-      gap:1em;
+      gap: 1em;
 
-  
+
 
 }
+
 .final-resullts .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 columns */
-  gap: 16px; /* space between images */
-  max-width: 960px; /* optional: limits the container width */
-  margin: 0 auto; /* center on page */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* 3 columns */
+      gap: 16px;
+      /* space between images */
+      max-width: 960px;
+      /* optional: limits the container width */
+      margin: 0 auto;
+      /* center on page */
 }
 
 .grid-container img {
-  width: 100%; /* makes image fill its cell */
-  height: auto; /* maintains aspect ratio */
-  border-radius: 8px; /* optional: rounded corners */
+      width: 100%;
+      /* makes image fill its cell */
+      height: auto;
+      /* maintains aspect ratio */
+      border-radius: 8px;
+      /* optional: rounded corners */
 }
 
 
 
-/* Responsive: keep gallery height reasonable */
-@media (min-width: 768px) {
-      .sg-viewport {
-            height: 420px;
+/* Tablet & Desktop */
+@media screen and (min-width: 768px) {
+
+      body {
+            gap: 7.5em;
+            font-size: 16px;
+            line-height: 1.5;
+
       }
+
+      .project-header {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            margin: 2em;
+            padding: 4em
+      }
+
+      .project-img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%
+      }
+
+      .intro-image {
+            margin: 0;
+            max-width: 100%;
+
+      }
+
+      .project-info {
+            flex-direction: column;
+            border: none;
+            background-color: rgba(255, 253, 255, 0.493);
+            border-radius: 10px;
+
+      }
+
+      main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10em;
+            gap: 3em;
+      }
+
+      .project-section2 {
+            gap: 4em
+      }
+
+
+
+      .project-research figure {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+      }
+
+      .project-research img {
+            max-width: 35%;
+            gap: 0;
+            padding: 0
+      }
+
+      .project-sketch figure {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            padding: 0;
+            gap: 0;
+            border: none;
+      }
+
+      .project-sketch img {
+            max-width: 40%;
+            gap: 0;
+            padding: 0;
+            border: 5px solid rgba(197, 98, 11, 0.2);
+            border-radius: 1em;
+      }
+}
+
+.project-illustration {
+      display: flex;
+      flex-direction: column;
+}
+
+.project-illustration p {
+      padding-bottom: 2em;
+
+}
+
+.final-resullts .grid-container {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      /* 3 columns */
+      gap: 16px;
+      /* space between images */
+      max-width: 960px;
+      /* optional: limits the container width */
+      margin: 0 auto;
+      /* center on page */
 }
