@@ -7,13 +7,14 @@
   font-family: 'poppins';
 
 }
+
 header {
   display: flex;
   position: fixed;
   flex-direction: column;
   margin: 0;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   left: 0;
   z-index: 999;
 
@@ -25,11 +26,9 @@ header {
 
 header figure {
   display: flex;
-
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 0;
   padding: 0;
   margin: 0;
 
@@ -49,26 +48,35 @@ header figure img {
   max-width: 20%;
   padding: 0;
   margin: 0;
+
 }
 
 
 .navbar {
   display: flex;
-  text-align: center;
+  justify-content: space-between;
+  /* <-- change here */
+  align-items: center;
+  width: 100%;
+  /* ensure full-width container */
+  box-sizing: border-box;
   padding: 1em;
   background-color: rgb(68, 5, 68);
+}
 
-
+.nav-menu {
+  order: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo {
-  /* position: absolute; */
-  left: 1rem;
-  font-weight: 500;
-  font-size: 3rem;
-  color: white;
-
+  order: 2;
+  display: flex;
+  align-items: center;
 }
+
 
 /* Base hamburger */
 .hamburger {
@@ -86,12 +94,18 @@ header figure img {
   z-index: 999;
 }
 
-.nav-list {
+
+.hamburger.active {
+  color: gold;
+  /* or any color you like */
+}
+
+/* .nav-list {
   flex-direction: column;
   justify-content: end;
   position: absolute;
   top:100px;
-  right: 3em;
+  right: 1em;
   width: 50%;
   height: 30vh;
   padding: 2em;
@@ -108,9 +122,42 @@ header figure img {
 
 .nav-list.active {
   display: flex;
+} */
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  /* make it slide over content */
+  top: 0;
+  left: 100%;
+  /* hide it completely off-screen to the left */
+  width: 40%;
+  /* width of the menu */
+  height: 80vh;
+  /* full height */
+  padding: 2em;
+  gap: 2rem;
+  list-style: none;
+  background: linear-gradient(135deg, #f8e6c1 0%, #f7eaf7 100%);
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: 6px 0 12px rgba(0, 0, 0, 0.2);
+  z-index: 998;
+
+  /* Animation */
+  transition: left 0.3s ease-in-out;
 }
 
+.nav-list.active {
+  left: 225px;
+  /* slide in */
+}
+
+
+
 .nav-list li {
+
   text-decoration: none;
   font-size: 20px;
   font-weight: 320;
@@ -124,7 +171,8 @@ header figure img {
 .nav-list li a {
   text-decoration: none;
   text-align: right;
-  color: #c5620b
+  color: #c5620b;
+
 }
 
 

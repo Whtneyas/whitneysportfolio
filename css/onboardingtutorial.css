@@ -194,7 +194,7 @@ h2 {
 }
 
 .project-illustration figure {
-        display: flex;
+      display: flex;
       justify-content: center;
       background-color: white;
       padding: 1em;
@@ -203,8 +203,100 @@ h2 {
 
 }
 
-.project-illustration  img {
+.project-illustration figure img {
       width: 100%;
       /* take up available space */
       max-width: 100%;
+}
+
+
+/**************** SWIPE GALLERY STYLES *****************/
+.swipe-gallery {
+      position: relative;
+      max-width: 100%;
+      margin: 1rem 0;
+}
+
+.sg-viewport {
+      overflow: hidden;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* keep a fixed viewport height but responsive if needed */
+      height: 320px;
+}
+
+.sg-track {
+      display: flex;
+      transition: transform 300ms ease;
+      will-change: transform;
+      align-items: center;
+      /* center slides vertically */
+      height: 100%;
+      gap: 12px;
+      /* small gap between visible items */
+      box-sizing: border-box;
+}
+
+/* Default: mobile — 1 item visible */
+.sg-track img {
+      width: 100%;
+      flex: 0 0 100%;
+      object-fit: contain;
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+}
+
+
+
+.sg-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 0.8rem;
+      font-size: 1.4rem;
+      cursor: pointer;
+      border-radius: 4px;
+}
+
+.sg-prev {
+      left: 8px;
+}
+
+.sg-next {
+      right: 8px;
+}
+
+.sg-dots {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 0.6rem;
+}
+
+.sg-dots button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      background: #ccc;
+      padding: 0;
+      cursor: pointer;
+}
+
+.sg-dots button[aria-selected="true"] {
+      background: #333;
+}
+
+
+/* Responsive: keep gallery height reasonable */
+@media (min-width: 768px) {
+      .sg-viewport {
+            height: 420px;
+      }
 }
