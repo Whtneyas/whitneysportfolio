@@ -103,11 +103,7 @@ main {
 
 }
 
-.project-intro {
-      display: flex;
-      flex-direction: column;
 
-}
 
 h2 {
       font-size: 1.5rem;
@@ -133,6 +129,8 @@ main {
 }
 
 .project-intro {
+      display: flex;
+      flex-direction: column;
       padding: 1.5em 2em;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(197, 98, 11, 0.06);
