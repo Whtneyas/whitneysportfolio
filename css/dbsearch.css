@@ -86,7 +86,7 @@ ul {
       flex-direction: column;
       gap: 1.5em;
       font-size: 16px;
-      padding: 3em 3em 3em;
+      padding: 1em 1em 1em;
       max-width: 1000px;
       margin: auto;
       line-height: 1.6;
@@ -153,7 +153,7 @@ h4 {
       font-size: 1.2rem;
       font-weight: bold;
       border-top: 1px solid grey;
-      padding-top:2em;
+      padding-top: 2em;
 }
 
 .filter-structures {
@@ -161,7 +161,7 @@ h4 {
       flex-direction: column;
       gap: 2em;
       margin-top: .5em;
-     
+
 }
 
 .filter-structures img {
@@ -194,6 +194,18 @@ h4 {
       max-height: 100%;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
       border-radius: 8px;
+}
+.hifi-sketch {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2em;
+      margin-top: 3em;
+}
+
+.hifi-sketch img {
+      width: 40%;
+
 }
 
 
@@ -243,7 +255,7 @@ h4 {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 10em;
+            padding: 5em;
             gap: 3em;
       }
 
@@ -257,4 +269,19 @@ h4 {
       .filter-structures img {
             width: 100%;
       }
+
+
+      .hifi-sketch {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            gap: 2em;
+            margin-top: 3em;
+      }
+
+         .hifi-sketch img {
+           width: 30%;
+      }
+
+
 }
