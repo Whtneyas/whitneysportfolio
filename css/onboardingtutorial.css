@@ -92,8 +92,7 @@ main {
       gap: 5em;
       padding: 3em;
       background-color: white;
-       border-radius: none
-
+      border-radius: none
 }
 
 .project-section1,
@@ -284,7 +283,7 @@ h2 {
 
 
 /* Tablet & Desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {   
 
       body {
             gap: 7.5em;
