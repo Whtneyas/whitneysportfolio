@@ -4,16 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inviteflow</title>
-    <link rel="stylesheet" href="/css/header.css">
+    <title>Onboarding tutorial</title>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/inviteflow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+
     <header>
         <nav aria-label="Main navigation" class="navbar">
             <figure>
                 <h1>Portfolio</h1>
-                <img src="images/logowhite.png" alt="">
+                <img src="../images/logowhite.png" alt="">
             </figure>
 
 
@@ -23,26 +35,29 @@
 
             <ul class="nav-list">
 
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#work">WORK</a></li>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../index.html">SKILLS</a></li>
+                <li><a href="../index.html">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-            </ul>
+
         </nav>
+
+
     </header>
+
 
 
     <article class="project-header">
         <div class="project-img">
-            <h1>DATA VISUALISATION</h1>
-            <figure class="intro-image"><img src="..//dvimages/illusrationdv.png" alt=""></figure>
+            <h1>INVITEFLOW - NIEUWE AGORA</h1>
+            <figure class="intro-image"><img src="..//inviteflowimages/intro.png" alt=""></figure>
         </div>
 
         <section class="project-info">
             <ul>
                 <li>PROJECT</li>
-                <li> Inviteflow</li>
+                <li>Onboarding tutorial for trial users</li>
             </ul>
 
             <ul>
@@ -51,23 +66,446 @@
             </ul>
 
             <ul>
+                <li>CLIENT</li>
+                <li>Martijn Bosman</li>
+            </ul>
+
+            <ul>
                 <li>DURATION</li>
-                <li>5 months</li>
+                <li>4 months</li>
             </ul>
 
             <ul>
                 <li>SKILLS</li>
-                <li>UX/UI Design,Visual design,  </li>
+                <li>UX/UI Design, Prototyping, UserTesting, Front-end Development</li>
             </ul>
+
+            <a href="https://www.figma.com/proto/9dA4Fv9SnQSsj72FuF6i1R/Usability-testing?page-id=2%3A2&node-id=2-122154&viewport=763%2C718%2C0.02&t=y3GQQq2loug07WEg-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A128694"
+                class="read-more-btn"> Prototype</a>
+        </section>
+
+
+    </article>
+
+    <main>
+
+        <!---------------------------------------- PROJECT INTRODUCTION -------------------------------->
+        <article class="project-section1">
+            <section class="project-intro">
+                <h2>INTRODUCTION</h2>
+                <p>Fewer people are politically active while society is becoming more complex, so it is important to
+                    have a
+                    safe way to gather knowledge and information. Mathijs van Buesekom noted that the current GroenLinks
+                    platform is closed and not accessible to regular members, which reduces transparency.In this
+                    project, </p>
+
+                <p> <strong> I am designing a safe process that is partly public and partly closed for inviting internal
+                        members
+                        and
+                        external experts.</strong></p>
+
+                <p> Based on research by Martijn Bosman, there is a need for a safe, transparent, and democratic process
+                    that allows members and citizens to participate and contribute to political discussions.</p>
+            </section>
+
+            <section>
+                <h2>ABOUT CLIENT🕴️</h2>
+                <p>Martijn Bosman is a lecturer at the Amsterdam University of Applied Sciences and a service
+                    designer.
+                    He is a member of GroenLinks and has researched the internal decision-making processes of
+                    political
+                    parties. His research showed a lack of participation and communication. Martijn aims to make
+                    political parties more democratic and transparent, and therefore proposes designing a safe
+                    digital
+                    interactive product to invite citizens and experts to participate in discussions within working
+                    groups.</p>
+            </section>
+
+            <section>
+                <h2>PROBLEM</h2>
+                <p>
+                    The current GroenLinks platform is closed, meaning regular members and citizens cannot access key
+                    information or discussions, which limits participation and transparency. This creates a gap between
+                    the party and its supporters. Martijn Bosman argues that a more transparent and democratic process
+                    is needed. To address this, an interactive digital product is needed that safely invites members and
+                    experts to participate in working groups.
+                </p>
+            </section>
+
+            <section>
+                <h2>DESIGN CHALLENGE🦾</h2>
+                <p>How might we design a secure and inclusive invite system for a political collaboration platform that
+                    encourages participation from members, experts, and citizens while ensuring transparency and
+                    trust?</p>
+
+            </section>
+
+
+        </article>
+
+        <!---------------------------------------- DESIGN PROCESS -------------------------------->
+        <article class="design-process">
+            <h2>DESIGN PROCESS</h2>
+            <ul>
+
+                <li><a href="#research">RESEARCH</a></li>
+                <li><a href="#ideation">IDEATION</a></li>
+                <li><a href="#concept">CONCEPT</a></li>
+                <li><a href="#prototype">PROTOTYPE</a></li>
+                <li><a href="#validation">VALIDATION</a></li>
+
+            </ul>
+        </article>
+
+        <article>
+
+            <!---------------------------------------- RESEARCH -------------------------------->
+            <section id="research">
+                <h3> 0.1 RESEARCH</h3>
+
+                <article class="User-interviews-persona">
+                    <h4>User Interviews (PERSONA)</h4>
+                    <p>To better understand the needs and pain points of potential users, I conducted interviews with
+                        chairmen of working groups from different sectors who fit the target audience profile. The
+                        interviews focused on their
+                        experiences with political platforms, their motivations for participation, and their concerns
+                        regarding security and transparency.Based on the insights gathered, I created a persona for a
+                        typical user:The persona is based on the interviews I conducted with chairpersons. Their main
+                        need is to actively involve both members and people outside the party</p>
+
+                    <figure>
+                        <img src="../inviteflowimages/persona.png" alt="" class="zoomable">
+                        <figcaption>Persona</figcaption>
+                    </figure>
+                </article>
+
+                <article class="stakeholder-map">
+                    <h4>Stakeholder map</h4>
+                    <p>
+                        To identify all relevant parties involved in the invite process, I created a stakeholder map.
+                        This map helped visualize the relationships and interests of each stakeholder, including party
+                        members, external experts, citizens, and platform administrators. Understanding these dynamics
+                        was crucial for designing an inclusive and secure invite system that addresses the needs of all
+                        parties involved.
+                    </p>
+                    <figure>
+                        <img src="../inviteflowimages/stakeholdermap.png" alt="">
+                        <figcaption>stakeholder map</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pve">
+                    <h4>Requirements Specification</h4>
+                    <p>Based on the research findings, I developed a set of requirements for the invite system. These
+                        requirements focused on key aspects such as security measures, user experience, transparency
+                        features, and inclusivity considerations. The specification served as a guiding document
+                        throughout the design process, ensuring that the final product met the identified needs and
+                        addressed the challenges highlighted during the research phase.</p>
+
+                    <figure>
+                        <img src="../inviteflowimages/pve.png" alt="">
+                        <figcaption>Requirement specification</figcaption>
+                    </figure>
+
+                    <div id=" lightbox">
+                        <img id="lightbox-img">
+                    </div>
+
+                </article>
+            </section>
+
+            <!---------------------------------------- IDEATION -------------------------------->
+            <section id=" ideation">
+                <h3> 0.2 IDEATION </h3>
+                <p>Based on the research insights, I brainstormed various ideas for the invite system. I focused
+                    on
+                    creating a user-friendly interface that balances security with ease of use. I explored
+                    different
+                    methods for verifying identities, such as two-factor authentication and secure invitation
+                    links.
+                    Additionally, I considered features that would enhance transparency, such as activity logs
+                    and
+                    clear communication channels between members and invitees. After evaluating the ideas
+                    against the
+                    requirements specification, I selected the most promising concepts to develop further.</p>
+
+                <article class="hkj-method">
+                    <h4>HKJ (How can you method)</h4>
+                    <p>By using the HKJ method, I explored how to improve the invite system's usability and
+                        security.
+                        This involved asking "How can you..." questions to identify potential solutions and
+                        innovations
+                        within the design process.</p>
+                    <div>
+                        <figure>
+                            <img src="../inviteflowimages/hkji.png" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="../inviteflowimages/hkjii.png" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../inviteflowimages/hkjiii.png"">
+                            <figcaption></figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src=" ../inviteflowimages/hkjiiiii.png" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                </article>
+            </section>
+
+            <!---------------------------------------- CONCEPT -------------------------------->
+            <section id="concept">
+                <h3> 0.3 CONCEPT</h3>
+                <article>
+
+                    <h4>INVITEFLOW</h4>
+                    <p>The process consists of multiple phases that invitees go through in order to participate in a
+                        working
+                        group. Throughout these steps, different privacy levels—public, open, private, and secret—are
+                        taken
+                        into account. This ensures that invitees only gain access to information relevant to their role,
+                        while safeguarding the confidentiality of the content. As a result, the right people receive the
+                        right information based on their access level.</p>
+
+
+                </article>
+
+                <article class="access-level">
+                    <h4>ACCESS LEVEL</h4>
+                    <p>I created an access level overview with the help of cyber security experts and also by
+                        interviewing the chairpersons of the groenlinks political party for feedback.Invitees are
+                        granted access based on their role within the working group. The system supports four
+                        privacy levels: public, open, private, and secret. Public content is accessible to all users,
+                        while open content is visible to members of the working group. Private content is restricted to
+                        specific individuals or roles within the group, and secret content is only accessible to
+                        administrators or designated members. </p>
+
+                    <ul>
+                        <li><strong>Public:</strong> Accessible to all users</li>
+                        <li><strong>Open:</strong> Visible to members of the working group</li>
+                        <li><strong>Private:</strong> Restricted to specific individuals or roles within the group</li>
+                        <li><strong>Secret:</strong> Only accessible to administrators or designated members</li>
+                    </ul>
+
+                    <figure>
+                        <img src="../inviteflowimages/overzichtprocesi.png" alt="Overview of the process">
+                        <img src="../inviteflowimages/overzichtproceii.png" alt=>
+                    </figure>
+                </article>
+            </section>
+
+            <!---------------------------------------- PROTOTYPE -------------------------------->
+            <section id="prototype">
+                <h3>PROTOTYPE</h3>
+
+                <article class="wireframe">
+                    <h4>Wireframes</h4>
+                    <p>Based on the concept, I created wireframes to visualize the layout and structure of the invite
+                        system. The wireframes focused on key screens, such as the invitation process, user dashboard,
+                        and security settings. I ensured that the design was intuitive and user-friendly, with clear
+                        navigation and accessible features. The wireframes served as a foundation for further
+                        development
+                        and refinement of the invite system.</p>
+
+                    <figure>
+                        <img src="../inviteflowimages/wireframes.png" alt="">
+                        <figcaption>wireframe 1</figcaption>
+                    </figure>
+
+                </article>
+
+                <article class="userstory-map ">
+                <h4>The inviteflow using user story map</h4>
+                <p>To illustrate the user journey through the invite system, I created a user story map. This map
+                    outlined the key steps and interactions that users would experience, from receiving an
+                    invitation
+                    to participating in a working group. The story map helped identify potential pain points and
+                    opportunities for improvement, allowing me to refine the design and ensure a seamless user
+                    experience.</p>
+
+                <figure>
+                    <img src="../inviteflowimages/userstorymap.png" alt="User Story Map">
+                </figure>
+
+                <div>
+                    <h5>Invitflow process</h5>
+                    <p>Eventhough there are a lot of steps in the inviteflow, the most important ones are:</p>
+                    <ul>
+                        <li>Receiving an invitation</li>
+                        <li>Verifying identity</li>
+                        <li>Setting up a profile</li>
+                        <li>Accessing working group content based on privacy level</li>
+                    </ul>
+
+
+                    <div>
+                        <div>
+                            <h6>Recieving an invitation </h6>
+                            <figure>
+                                <img src="../inviteflowimages/uitnodiging.svg" alt="">
+                            </figure>
+                        </div>
+
+                        <div>
+                            <h6>Creating an account and verification</h6>
+                            <figure>
+                                <img src="../inviteflowimages/accountaanmaken.svg" alt="">
+                            </figure>
+                        </div>
+
+                        <div>
+                            <h6>Logging in</h6>
+                            <figure>
+                                <img src="../inviteflowimages/inloggen.svg" alt="">
+                            </figure>
+                        </div>
+
+                        <div>
+                            <h6>Onboarding platform</h6>
+                            <figure>
+                                <img src="../inviteflowimages/privacylevels.svg" alt="">
+                            </figure>
+                        </div>
+
+                        <div>
+                            <h6>Onboarding working group</h6>
+                            <figure>
+                                <img src="../inviteflowimages/obwerkgroep.svg" alt="">
+                                <img src="../inviteflowimages/obwerkgroeptwo.svg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+        </article>
+        </section>
+
+        <!---------------------------------------- VALIDATION -------------------------------->
+        <section id="validation">
+            <h3>VALIDATION</h3>
+            <article>
+                <div>
+                    <h4>Usability Testing<h4>
+                            <p>To validate the effectiveness of the invite system, I conducted user testing sessions
+                                with
+                                potential users, including party members and external experts. Participants were
+                                asked
+                                to
+                                complete specific tasks within the system, such as accepting an invitation,
+                                verifying
+                                their
+                                identity, and accessing working group content. Feedback was collected on usability,
+                                security
+                                features, and overall user experience. Based on the feedback, I made necessary
+                                adjustments to
+                                improve the design and functionality of the invite system.</p>
+
+                            <figure>
+                                <img src="../inviteflowimages/usabilitytesting.png" alt="">
+                                <figcaption>Usability testing feedback</figcaption>
+                            </figure>
+                </div>
+
+                <div>
+                    <h4>Requirements Completion
+                        <p>I was able to confirm that all requirements from the specification were met through the
+                            design
+                            and
+                            validation process. The invite system successfully addressed key aspects such as
+                            security
+                            measures, user experience, transparency features, and inclusivity considerations.
+                            Feedback
+                            from user testing indicated that the system was intuitive and easy to use, while also
+                            providing the necessary security and transparency features. Overall, the project met
+                            its
+                            objectives and delivered a secure and inclusive invite system for the political
+                            collaboration
+                            platform.</p>
+
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                </div>
+
 
         </section>
 
-    </article>
+        <!---------------------------------------- REFLECTION -------------------------------->
+
+        <section>
+            <h3>REFLECTION</h3>
+            <div>
+                <h4>Societal Impact</h4>
+                <p>The invite system has the potential to significantly enhance political participation and
+                    transparency within the GroenLinks party. By providing a secure and inclusive platform for
+                    inviting members, experts, and citizens to participate in working groups, the system fosters
+                    greater engagement and collaboration. This can lead to more diverse perspectives being
+                    represented in political discussions, ultimately contributing to more democratic
+                    decision-making
+                    processes. Additionally, the emphasis on security and transparency helps build trust among
+                    users,
+                    encouraging more individuals to get involved in political activities.</p>
+            </div>
+
+            <div>
+                <h4>Lessons learned</h4>
+                <ul>
+                    <li>I have learnt to proactively seek feedback from stakeholders and users throughout the
+                        design process to ensure
+                        that the final product meets their needs and expectations.</li>
+                    <li>I have learnt to not be afraid to fail and to embrace iterative design, using failures
+                        as opportunities for learning and
+                        improvement.</li>
+                    <li>I have learnt to engage stakeholders early and often to ensure their needs and concerns
+                        are
+                        addressed in the design process.</li>
+                    <li>I have learnt to master the courage to make design decisions based on research and user
+                        feedback,
+                        even when they challenge
+                        assumptions or conventions.</li>
+                </ul>
+            </div>
+        </section>
+
+        </article>
+
+
+
+    </main>
+
+
+
+    <footer class="footer-contact" id="contact">
+        <h2>Contact Me</h2>
+        <form class="footer-form">
+            <label for="footer-name">Name</label>
+            <input type="text" id="footer-name" name="name" required />
+
+            <label for="footer-email">Email</label>
+            <input type="email" id="footer-email" name="email" required />
+
+            <label for="footer-message">Message</label>
+            <textarea id="footer-message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p class="footer-copy">© 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+
 
 
 
 
     <script src="script.js"></script>
+    <script src="dbs/script.js"></script>
+
+
 </body>
 
 </html>
