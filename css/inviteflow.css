@@ -193,7 +193,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 
 }
 
@@ -211,19 +211,25 @@ h4 {
     margin-top: 1em;
 }
 
-.Uer-interviews-persona {
+.User-interviews-persona {
     padding: 1em;
+
 }
+
+
 
 .User-interviews-persona figure img,
 .stakeholder-map figure img,
 .pve figure img,
 .access-level figure img,
 .wireframe figure img,
-.userstory-map figure img{
+.userstory-map figure img,
+#validation figure img,
+.wireframe figure img {
     padding: 1em;
     max-width: 100%;
     height: auto;
+    background-color: white;
 
 }
 
@@ -254,14 +260,16 @@ figcaption {
     border-radius: 1em;
 }
 
+.validation h4 p {
+    font-size: 14px;
+    color: black;
+}
 
 
 .zoomable {
     cursor: zoom-in;
 
 }
-
-
 
 /* Lightbox overlay */
 #lightbox {
@@ -285,4 +293,291 @@ figcaption {
     max-height: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
+}
+
+.lessons ul {
+    list-style-type: circle
+}
+
+.lessons ul li {
+    text-decoration: dotted;
+    padding: 1em;
+}
+
+@media screen and (min-width: 768px) {
+
+
+    body {
+        gap: 7.5em;
+        font-size: 16px;
+        line-height: 1.5;
+
+    }
+
+    .project-header {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        margin: 2em;
+        padding: 4em
+    }
+
+    .project-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%
+    }
+
+    .intro-image {
+        margin: 0;
+        max-width: 100%;
+
+    }
+
+    .project-info {
+        flex-direction: column;
+        border: none;
+        background-color: rgba(255, 253, 255, 0.493);
+        border-radius: 10px;
+
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5em 10em;
+        gap: 1em;
+    }
+
+    .two-columns {
+        display: flex;
+        gap: 2em;
+
+
+    }
+
+    .two-columns {
+        line-height: 1.6,
+    }
+
+
+    .design-challenge h2 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .design-challenge p {
+        text-align: center
+    }
+
+    .design-process {
+        padding: 1em 3em;
+        background-color: rgb(229, 225, 231);
+        border-radius: 1em;
+
+    }
+
+    .design-process ul {
+        display: flex;
+        flex-direction: row;
+        gap: 4m;
+    }
+
+    .design-process ul li {
+        font-size: large;
+    }
+
+    .design-process ul li a {
+        font-size: 18;
+        font-weight: 500;
+    }
+
+    .design-process ul li a:hover {
+        color: rgb(117, 6, 134)
+    }
+
+    .design-process ul li:hover {
+        color: rgb(117, 6, 134)
+    }
+
+    .design-process ul li a:active {
+        text-decoration: underline;
+    }
+
+    .process {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+
+
+    .User-interviews-persona div,
+    .stakeholder-map div {
+        display: flex;
+        gap: 2em;
+        align-items: flex-start;
+
+    }
+
+    .User-interviews-persona div p {
+        max-width: 40%;
+        /* max-height: 50%; */
+    }
+
+    .User-interviews-person figure img {
+        width: 50%;
+        height: 50%
+    }
+
+    .stakeholder-map {
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    .stakeholder-map div {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 70%;
+        padding: 0;
+    }
+
+    .stakeholder-map figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stakeholder-map figure img {
+        max-width: 60%;
+    }
+
+    .pve {
+        display: flex;
+
+
+    }
+
+    .pve {
+        display: flex;
+        gap: 2em;
+        flex-direction: row-reverse;
+    }
+
+    .pve figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .pve figure img {
+        max-width: 70%;
+        border: 5px solid rgb(166, 215, 230);
+        border-radius: 10px;
+
+    }
+
+    .hkj-method {
+        padding: 2em 3em;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .heading p {
+        text-align: center;
+    }
+
+    .access-level-columns {
+        display: flex;
+        gap: 2em;
+
+    }
+
+    .access-level-columns p {
+        width: 50%;
+    }
+
+    .access-level figure {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .access-level figure img {
+        width: 40%;
+    }
+
+    .wireframe {
+        display: flex;
+    }
+
+    .userstory-map {
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    .userstory-map-descrip {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2em;
+    }
+
+    .invite-process h5 {
+        font-size: 1.5rem;
+        color: #c5620b;
+    }
+
+    .invite-process ul {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        list-style-type: decimal;
+        font-weight: bold;
+        padding: 1em;
+    }
+
+    h6 {
+        font-size: large;
+    }
+
+    .invite-process div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .invite-process div img {
+        width: 70
+    }
+
+    .validation {
+        display: flex;
+        flex-direction: column;
+        gap:5em;
+
+    }
+
+    .requirement-completion {
+        display: flex;
+        gap: 2em;
+    }
+
+    .requirement-completion figure img {
+        width: 70%;
+        border: 5px solid rgb(166, 215, 230);
+        border-radius: 5px;
+    }
 }
