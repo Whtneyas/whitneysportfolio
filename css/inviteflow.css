@@ -193,6 +193,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
 }
 
@@ -253,9 +254,10 @@ figcaption {
     border-radius: 1em;
 }
 
+
+
 .zoomable {
     cursor: zoom-in;
-
 
 }
 
