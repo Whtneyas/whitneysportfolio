@@ -26,14 +26,20 @@ header {
 
 header figure {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0;
-  margin: 0;
+  flex-direction: column-reverse;
+  max-width:100%;
+  padding: 2em;
+
+}
+
+header figure div{
+  display: flex;
+  max-width:15%;
+  justify-content: center;
 
 
 }
+  
 
 header figure h1 {
   color: white;
@@ -44,6 +50,7 @@ header figure h1 {
 
   
 }
+
 
 header figure img {
   max-width: 20%;
@@ -203,9 +210,9 @@ header figure img {
 
   header figure {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 0;
+    justify-content: center;
+    padding: 1em;
+
 
 
   }
