@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'poppins';
+
+}
+
+header {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    margin: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+
+
+    /* background: #c5620b; */
+}
+
+
+
+
+header figure {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 2em;
+
+}
+
+header figure div {
+    display: flex;
+;
+
+}
+
+
+
+
+header figure h1 {
+    color: white;
+    order: 2;
+    text-align: left;
+    font-size: 14px;
+    text-decoration: overline;
+
+
+}
+
+
+header figure img {
+    max-width: 20%;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* <-- change here */
+    align-items: center;
+    width: 100%;
+    /* ensure full-width container */
+    box-sizing: border-box;
+    background-color: rgb(68, 5, 68);
+}
+
+.nav-menu {
+    order: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+/* Base hamburger */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white
+}
+
+
+.hamburger {
+    display: block;
+    z-index: 999;
+}
+
+
+.hamburger.active {
+    color: gold;
+    /* or any color you like */
+}
+
+/* .nav-list {
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  top:100px;
+  right: 1em;
+  width: 50%;
+  height: 30vh;
+  padding: 2em;
+  gap: 2rem;
+  display: none;
+  z-index: 999;
+  list-style: none;
+  background-color: rgb(238, 236, 212);
+  border-radius: 5px;
+  box-shadow:  -6px 0 12px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.nav-list.active {
+  display: flex;
+} */
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    /* make it slide over content */
+    top: 0;
+    left: 100%;
+    /* hide it completely off-screen to the left */
+    width: 40%;
+    /* width of the menu */
+    height: 80vh;
+    /* full height */
+    padding: 2em;
+    gap: 2rem;
+    list-style: none;
+    background: linear-gradient(135deg, #f8e6c1 0%, #f7eaf7 100%);
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 6px 0 12px rgba(0, 0, 0, 0.2);
+    z-index: 998;
+
+    /* Animation */
+    transition: left 0.3s ease-in-out;
+}
+
+.nav-list.active {
+    left: 225px;
+    /* slide in */
+}
+
+
+
+.nav-list li {
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 320;
+    border-radius: .2em;
+
+
+
+    /* background-color:palegoldenrod */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    text-align: right;
+    color: #c5620b;
+
+}
+
+
+
+
+
+/* Tablet & Desktop */
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0em 1em;
+
+
+    }
+
+
+
+
+    header figure {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+
+
+
+    }
+
+
+
+    header figure img {
+        width: 20%;
+        display: block;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .hamburger {
+        display: none;
+        /* hide hamburger */
+    }
+
+    .nav-list {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        padding: 0;
+        gap: 1.5rem;
+        background: none;
+        border-top: none;
+
+
+    }
+
+    .nav-list li {
+
+        display: inline-block;
+        list-style: none;
+        font-weight: lighter;
+        border: 1px solid white;
+        padding: .5em;
+        border-radius: .2em;
+        font-weight: 100 !important;
+
+        /* background-color:palegoldenrod */
+
+    }
+
+
+    .nav-list li a {
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+
+
+
+
+    }
+
+
+    .nav-list li:hover {
+        background-color: palegoldenrod;
+
+    }
+
+    .nav-list li a:hover {
+        color: rgb(68, 5, 68);
+        font-weight: 500;
+    }
+}

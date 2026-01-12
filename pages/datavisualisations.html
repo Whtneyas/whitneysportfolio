@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datavisualisation </title>
-    <link rel="stylesheet" href="../css/onboardingtutorial.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/head.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/dv.css">
 
@@ -24,10 +23,16 @@
 
     <header>
         <nav aria-label=" Main navigation" class="navbar">
-            <figure>
-                <h1>Portfolio</h1>
-                <img src="../images/logowhite.png" alt="">
-            </figure>
+            <a href="../index.html">
+                <figure>
+                    <div>
+                        <h1>Portfolio</h1>
+                    </div>
+                    <div>
+                        <img src="../images/logowhite.png" alt="">
+                    </div>
+                </figure>
+            </a>
 
 
             <button class="hamburger" aria-label="Toggle menu">
@@ -73,7 +78,7 @@
             <ul>
                 <li>SKILLS</li>
                 <li>UX/UI Design,Visual hierarchy, Chart literacy, Accessibility & clarity, Critical thinking,
-                    vStorytelling, Data analysis </li>
+                    Storytelling, Data analysis </li>
             </ul>
 
         </section>
@@ -109,39 +114,42 @@
                         its
                         structure and identify key variables.
                 </div>
+                <div class="two-columns ">
+                    <div>
+                        <h3>Lessons on Data Visualisations</h3>
+                        <p>Every week we get a lecture on data visualisation from Andy Kirk. Andy kirk is a freelance
+                            data
+                            visualisation consultant, designer and eduactor based in the Uk. Since we had purchased his
+                            handbook
+                            foir data visualisation it
+                            was easy to follow his lessons. In these lessons we learned about the various types of data
+                            visualisations, process of visualsation design and lastly data representation principles.
+                            HOw to
+                            choose the right chart for your data
+                        </p>
+                    </div>
 
-                <div>
-                    <h3>Lessons on Data Visualisations</h3>
-                    <p>Every week we get a lecture on data visualisation from Andy Kirk. Andy kirk is a freelance data
-                        visualisation consultant, designer and eduactor based in the Uk. Since we had purchased his
-                        handbook
-                        foir data visualisation it
-                        was easy to follow his lessons. In these lessons we learned about the various types of data
-                        visualisations, process of visualsation design and lastly data representation principles. HOw to
-                        choose the right chart for your data
-                    </p>
-                </div>
+                    <div class="tools">
+                        <h3>Tools for data visualisation</h3>
+                        <p>To prepare for the project, I used various tools to create effective visualisations. These
+                            included
+                            software like
 
-                <div class="tools">
-                    <h3>Tools for data visualisation</h3>
-                    <p>To prepare for the project, I used various tools to create effective visualisations. These
-                        included
-                        software like
-
-                    <ul>
-                        <li>Excel</li>
-                        <li>Tableau</li>
-                        <li>Rawgraphs</li>
-                        <li>Flourish</li>
-                        <li>Lucid chart</li>
-                    </ul>
+                        <ul>
+                            <li>Excel</li>
+                            <li>Tableau</li>
+                            <li>Rawgraphs</li>
+                            <li>Flourish</li>
+                            <li>Lucid chart</li>
+                        </ul>
+                    </div>
                 </div>
 
             </section>
 
-            <section class="raw-data">
+            <section class="raw-data-container">
 
-                <div>
+                <div class="raw-data">
                     <h2> RAW DATA</h2>
                     <p>The raw data used in this project was collected form a group of students at the Amsterdam
                         University
@@ -194,55 +202,70 @@
                     </div>
 
                     <div class="angle-1">
-                        <h6>Angle 1: Does the travel of duration affect the sleeping time of students</h6>
-                        <p>This visualization shows semicircular arcs that all start from the same point. The radius of
-                            each arc represents the travel time in minutes, and the color shows how long the student
-                            slept. This means you can read two variables at the same time. The horizontal axis also
-                            relates to travel time, but the curved shape makes the length of each journey stand out more
-                            visually.
+                        <div>
+                            <h6>Angle 1: Does the travel of duration affect the sleeping time of students</h6>
+                            <p>This visualization shows semicircular arcs that all start from the same point. The radius
+                                of
+                                each arc represents the travel time in minutes, and the color shows how long the student
+                                slept. This means you can read two variables at the same time. The horizontal axis also
+                                relates to travel time, but the curved shape makes the length of each journey stand out
+                                more
+                                visually.
 
-                        <p> The variables i used for this angles are </p>
-                        <ul>
-                            <li>Place of residence </li>
-                            <li>Sleeping time</li>
-                            <li>Wake up time</li>
+                            <p> The variables i used for this angles are:</p>
+                            <ul>
+                                <li>Place of residence </li>
+                                <li>Sleeping time</li>
+                                <li>Wake up time</li>
 
-                        </ul>
+                            </ul>
+                        </div>
+
 
                         <figure>
                             <img src="../dvimages/graph1.png" alt="" class="zoomable">
                             <figcaption>Semi-arc chart</figcaption>
                         </figure>
+
                     </div>
 
                     <div class="angle-1">
-                        <h6>Angle 2: The screen time and coffee consumption of the students</h6>
+                        <div>
+                            <h6>Angle 2: The screen time and coffee consumption of the students</h6>
 
-                        <p>In this visualization, I explored the relationship between screen time, coffee consumption,
-                            and sleep duration among students. Each point in the scatterplot represents an individual
-                            student. The horizontal axis shows sleep duration in hours, while the vertical axis
-                            represents daily screen time in minutes.
+                            <p>In this visualization, I explored the relationship between screen time, coffee
+                                consumption,
+                                and sleep duration among students. Each point in the scatterplot represents an
+                                individual
+                                student. The horizontal axis shows sleep duration in hours, while the vertical axis
+                                represents daily screen time in minutes.
 
-                            To support comparative reading, I used shape to indicate gender (female, male, or unknown)
-                            and color to encode the number of coffees consumed per day. This allows viewers to identify
-                            clusters and patterns without overwhelming them with visual complexity.
+                                To support comparative reading, I used shape to indicate gender (female, male, or
+                                unknown)
+                                and color to encode the number of coffees consumed per day. This allows viewers to
+                                identify
+                                clusters and patterns without overwhelming them with visual complexity.
 
-                            From a UX perspective, the goal of this design was to balance readability with exploration.
-                            The legend is positioned prominently to guide interpretation, and the visual encoding
-                            choices help users quickly spot trends — such as whether students with longer screen time
-                            tend to sleep less, or whether higher coffee intake correlates with different sleep
-                            patterns.
+                                From a UX perspective, the goal of this design was to balance readability with
+                                exploration.
+                                The legend is positioned prominently to guide interpretation, and the visual encoding
+                                choices help users quickly spot trends — such as whether students with longer screen
+                                time
+                                tend to sleep less, or whether higher coffee intake correlates with different sleep
+                                patterns.
 
-                            Rather than drawing strict conclusions, this chart encourages viewers to interpret the data
-                            themselves, supporting a more reflective and engaging storytelling experience.</p>
-                        <p> The variables i used for this angles are </p>
+                                Rather than drawing strict conclusions, this chart encourages viewers to interpret the
+                                data
+                                themselves, supporting a more reflective and engaging storytelling experience.</p>
+                            <p> The variables i used for this angles are </p>
 
-                        <ul>
-                            <li>Screen time</li>
-                            <li>Coffee consumption</li>
-                            <li>Sleep duration</li>
-                            <li>Gender</li>
-                        </ul>
+                            <ul>
+                                <li>Screen time</li>
+                                <li>Coffee consumption</li>
+                                <li>Sleep duration</li>
+                                <li>Gender</li>
+                            </ul>
+                        </div>
 
                         <figure>
                             <img src="../dvimages/graph2.png" alt="" class="zoomable">
@@ -250,35 +273,46 @@
                         </figure>
 
                     </div>
+
+
+
                     <div class="angle-1">
-                        <h6>Angle 3: Scientific research on sleep duration for individuals between the ages of 18 and 40
-                        </h6>
-                        <p>This visualization communicates <strong>recommended sleep duration</strong> versus
-                            <strong>actual student sleep patterns</strong>, using a combination of a <strong>dot
-                                matrix</strong> and a <strong>donut chart</strong>. In the <strong>dot matrix on the
-                                left</strong>, <strong>each circle represents a student</strong>, with rows grouped by
-                            category—<strong>“Te weinig” (too little)</strong>, <strong>“Aanbevolen”
-                                (recommended)</strong>, and <strong>“Te veel” (too much)</strong>. This layout allows
-                            viewers to quickly see the distributionand identify <strong>clusters or
-                                outliers</strong>. The <strong>donut chart on the right</strong> summarizes the same
-                            data proportionally, providing an <strong>at-a-glance overview</strong> of how many students
-                            fall into each category. <strong>Color coding</strong> differentiates the three categories
-                            clearly while maintaining <strong>accessibility</strong>, and the combination of
-                            <strong>detailed and summary views</strong> addresses both <strong>granular
-                                analysis</strong> and <strong>quick interpretation</strong>. <strong>Minimal
-                                text</strong> ensures the chart is readable and visually balanced, while a <strong>brief
-                                annotation</strong> guides understanding. Overall, the visualization effectively
-                            communicates both the recommended sleep range and how students’ habits
-                            compare, making patterns and deviations</strong> immediately apparent.
-                        </p>
+                        <div>
+                            <h6>Angle 3: Scientific research on sleep duration for individuals between the ages of 18
+                                and 40
+                            </h6>
+                            <p>This visualization communicates <strong>recommended sleep duration</strong> versus
+                                <strong>actual student sleep patterns</strong>, using a combination of a <strong>dot
+                                    matrix</strong> and a <strong>donut chart</strong>. In the <strong>dot matrix on the
+                                    left</strong>, <strong>each circle represents a student</strong>, with rows grouped
+                                by
+                                category—<strong>“Te weinig” (too little)</strong>, <strong>“Aanbevolen”
+                                    (recommended)</strong>, and <strong>“Te veel” (too much)</strong>. This layout
+                                allows
+                                viewers to quickly see the distributionand identify <strong>clusters or
+                                    outliers</strong>. The <strong>donut chart on the right</strong> summarizes the same
+                                data proportionally, providing an <strong>at-a-glance overview</strong> of how many
+                                students
+                                fall into each category. <strong>Color coding</strong> differentiates the three
+                                categories
+                                clearly while maintaining <strong>accessibility</strong>, and the combination of
+                                <strong>detailed and summary views</strong> addresses both <strong>granular
+                                    analysis</strong> and <strong>quick interpretation</strong>. <strong>Minimal
+                                    text</strong> ensures the chart is readable and visually balanced, while a
+                                <strong>brief
+                                    annotation</strong> guides understanding. Overall, the visualization effectively
+                                communicates both the recommended sleep range and how students’ habits
+                                compare, making patterns and deviations</strong> immediately apparent.
+                            </p>
 
-                        <p> The variables i used for this angles are </p>
-                        <ul>
-                            <li> Recommended sleep duration</li>
-                            <li> Actual sleep duration</li>
-                            <li>Age</li>
+                            <p> The variables i used for this angles are </p>
+                            <ul>
+                                <li> Recommended sleep duration</li>
+                                <li> Actual sleep duration</li>
+                                <li>Age</li>
 
-                        </ul>
+                            </ul>
+                        </div>
 
                         <figure>
                             <img src="../dvimages/graph3.png" alt="" class="zoomable">
@@ -363,8 +397,8 @@
         <p class="footer-copy">© 2025 Your Name. All rights reserved.</p>
     </footer>
 
-<script src="/script.js"></script>
-<script src="/dbscript.js"></script>
+    <script src="/script.js"></script>
+    <script src="/dbscript.js"></script>
 </body>
 
 

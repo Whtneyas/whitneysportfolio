@@ -89,13 +89,15 @@ ul {
 main {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       gap: 5em;
       padding: 3em;
       background-color: white;
       border-radius: none
 }
 
-.project-section1{
+.project-section1 {
       display: flex;
       flex-direction: column;
       gap: 2em;
@@ -175,6 +177,34 @@ h2 {
       border-radius: 1em;
 
 
+}
+
+.zoomable {
+      cursor: zoom-in;
+}
+
+/* Lightbox overlay */
+#lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      align-items: center;
+      /* vertically center */
+      justify-content: center;
+      /* horizontally center */
+      z-index: 1000;
+}
+
+/* Zoomed image */
+#lightbox-img {
+      max-width: 100%;
+      max-height: 100%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
 }
 
 
@@ -282,7 +312,7 @@ h2 {
 
 
 /* Tablet & Desktop */
-@media screen and (min-width: 768px) {   
+@media screen and (min-width: 768px) {
 
       body {
             gap: 7.5em;
@@ -325,20 +355,49 @@ h2 {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 10em;
+            padding: 5em 10em;
             gap: 3em;
       }
 
-      .project-section2 {
-            gap: 4em
+      .project-section1 {
+            gap: 2em;
       }
 
+
+      .two-columns {
+            display: flex;
+            gap: 2em;
+           
+      }
+
+      .project-tasks h2 {
+            text-align: center;
+      }
+
+      .project-tasks ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+      }
+
+      .project-tasks p {
+            padding-top: 2em;
+
+      }
+
+      .project-section2 {
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+      }
 
 
       .project-research figure {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            padding: 3em;
+
       }
 
       .project-research img {
@@ -347,18 +406,29 @@ h2 {
             padding: 0
       }
 
+      .project-sketch {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10em;
+
+
+      }
+
+   
+
       .project-sketch figure {
             display: flex;
-            justify-content: flex-start;
-            flex-direction: row;
-            padding: 0;
-            gap: 0;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            flex-direction: column;
+            padding: 1em;
             border: none;
       }
 
       .project-sketch img {
-            max-width: 40%;
-            gap: 0;
+            max-width: 100%;
             padding: 0;
             border: 5px solid rgba(197, 98, 11, 0.2);
             border-radius: 1em;
@@ -367,7 +437,12 @@ h2 {
 
       .project-illustration {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            gap: 2em;
+      }
+
+      .project-illustration div {
+            max-width: 50%;
       }
 
       .project-illustration p {

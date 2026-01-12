@@ -19,6 +19,8 @@ body {
 }
 
 
+
+
 section {
   min-height: 100vh;
   /* padding: 1rem 2rem; */
@@ -31,10 +33,11 @@ section {
 #home {
   display: flex;
   position: relative;
-  top: 3em;
+  top: 15;
   justify-content: center;
   border-radius: 1.5em;
   margin: 1em;
+  margin-top: 15em;
 
 }
 
@@ -174,7 +177,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4em 1em;
+  padding: 2em 3em;
   gap: 3em;
 
 

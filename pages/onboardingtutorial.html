@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onboarding tutorial</title>
     <link rel="stylesheet" href="../css/onboardingtutorial.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/head.css">
+
     <link rel="stylesheet" href="../css/footer.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -23,10 +24,16 @@
 
     <header>
         <nav aria-label="Main navigation" class="navbar">
-            <figure>
-                <h1>Portfolio</h1>
-                <img src="../images/logowhite.png" alt="">
-            </figure>
+            <a href="../index.html">
+                <figure>
+                    <div>
+                        <h1>Portfolio</h1>
+                    </div>
+                    <div>
+                        <img src="../images/logowhite.png" alt="">
+                    </div>
+                </figure>
+            </a>
 
 
             <button class="hamburger" aria-label="Toggle menu">
@@ -100,52 +107,63 @@
                     software.</p>
             </article>
 
+
             <article class="project-client">
-                <h2>ABOUT CLIENT🕴️</h2>
-                <p>Ecochain is a company specialized in Life Cycle Assessment (LCA) — a method used to measure the
-                    environmental impact of a product throughout its entire life cycleEcochain offers two LCA
-                    software
-                    solutions: Ecochain Mobius and Ecochain Helix.
-                    The main difference between the two lies in their target users and applications:
+                <div>
+                    <h2>ABOUT CLIENT🕴️</h2>
+                    <p>Ecochain is a company specialized in Life Cycle Assessment (LCA) — a method used to measure
+                        the
+                        environmental impact of a product throughout its entire life cycleEcochain offers two LCA
+                        software
+                        solutions: Ecochain Mobius and Ecochain Helix.
+                        The main difference between the two lies in their target users and applications:
 
-                    Ecochain Mobius promotes ecodesign and is designed for product designers with limited knowledge
-                    of
-                    LCA.
-                    It enables them to easily create LCAs and make more sustainable design choices early in the
-                    development
-                    process.
+                        Ecochain Mobius promotes ecodesign and is designed for product designers with limited
+                        knowledge
+                        of
+                        LCA.
+                        It enables them to easily create LCAs and make more sustainable design choices early in the
+                        development
+                        process.
 
-                    Ecochain Helix empowers companies to create LCAs at scale for their production facilities. It
-                    provides
-                    insights into environmental impacts at the company, process, and product level, supporting
-                    strategic
-                    sustainability decisions.</p>
+                        Ecochain Helix empowers companies to create LCAs at scale for their production facilities.
+                        It
+                        provides
+                        insights into environmental impacts at the company, process, and product level, supporting
+                        strategic
+                        sustainability decisions.</p>
             </article>
 
-            <article>
-                <h2>CHALLENGE 🦾</h2>
-                <p>The existing onboarding tutorial within the Mobius software was intended to help guide users
-                    through
-                    the
-                    process of creating a product. However, based on feedback from clients, the tutorial was
-                    perceived
-                    as
-                    unclear, unhelpful, and lacking in practical guidance. Many users struggled to complete the
-                    initial
-                    steps and failed to understand the overall structure and capabilities of the software.</p>
-            </article>
+            <div class="two-columns">
+                <article>
+                    <h2>CHALLENGE 🦾</h2>
+                    <p>The existing onboarding tutorial within the Mobius software was intended to help guide users
+                        through
+                        the
+                        process of creating a product. However, based on feedback from clients, the tutorial was
+                        perceived
+                        as
+                        unclear, unhelpful, and lacking in practical guidance. Many users struggled to complete the
+                        initial
+                        steps and failed to understand the overall structure and capabilities of the software.</p>
+                </article>
 
 
-            <article>
-                <h2>GOAL🎯</h2>
-                <p>The primary goal of this project was to redesign the onboarding tutorial to enhance its clarity,
-                    usefulness, and overall user experience. The aim was to create a more intuitive and engaging
-                    tutorial
-                    that would effectively guide users through the initial steps of using the Mobius software,
-                    helping
-                    them
-                    understand its features and capabilities.</p>
-            </article>
+                <article>
+                    <h2>GOAL🎯</h2>
+                    <p>The primary goal of this project was to redesign the onboarding tutorial to enhance its
+                        clarity,
+                        usefulness, and overall user experience. The aim was to create a more intuitive and engaging
+                        tutorial
+                        that would effectively guide users through the initial steps of using the Mobius software,
+                        helping
+                        them
+                        understand its features and capabilities.</p>
+                </article>
+            </div>
+
+
+
 
             <article class="project-tasks">
                 <h2>TASKS📃</h2>
@@ -164,11 +182,13 @@
                     <li>Monitor user feedback and make ongoing improvements as needed.</li>
 
                 </ul>
+
                 <p>By focusing on both usability and learning, this onboarding experience needed to support users
                     with
                     little to no LCA knowledge, empowering them to get value from the software right from the start.
                 </p>
             </article>
+
 
         </section>
 
@@ -191,55 +211,63 @@
                 </ul>
 
                 <figure>
-                    <img src="../images/painpoints.png" alt="Painpoints">
-                    <img src="../images/suggestion.png" alt="Suggestion">
-                    <img src="../images/top.png" alt="top points">hjbjhj
-
+                    <img src="../images/painpoints.png" alt="Painpoints" class="zoomable">
+                    <img src="../images/suggestion.png" alt="Suggestion" class="zoomable">
+                    <img src="../images/top.png" alt="top points" class="zoomable">
                 </figure>
 
 
             </article>
 
             <article class="project-sketch">
-                <h2>LOW-FIDELITY & ITERATIVE SKETCH ✏️</h2>
-                <p><b>Method:</b> <span> Design Review, Conceptualization, Userflow design, Lo-fidelity sketching</span>
-                </p>
+                <div>
+                    <h2>LOW-FIDELITY & ITERATIVE SKETCH ✏️</h2>
+                    <p class=" methods "><b>Method:</b> <span> Design Review, Conceptualization, Userflow design,
+                            Lo-fidelity
+                            sketching</span>
+                    </p>
 
-                <p>After researching the existing Appcues flows, I began with low-fidelity sketches. I was
-                    tasked
-                    with
-                    creating a step-by-step tutorial for trial users. The tutorial needed to include key
-                    functionalities
-                </p>
+                    <p>After researching the existing Appcues flows, I began with low-fidelity sketches. I was
+                        tasked
+                        with
+                        creating a step-by-step tutorial for trial users. The tutorial needed to include key
+                        functionalities
+                    </p>
 
-                <ul>
-                    <li>Helping users create a product in mobius software</li>
-                    <li>Supporting users in adding impact to the product</li>
-                    <li>Facilitating product comparison and scenario creation</li>
-                    <li>Provided actionable suggestions to improve clarity, reduce cognitive load, and align the
-                        walkthroughs better with user needs</li>
-                </ul>
+                    <ul>
+                        <li>Helping users create a product in mobius software</li>
+                        <li>Supporting users in adding impact to the product</li>
+                        <li>Facilitating product comparison and scenario creation</li>
+                        <li>Provided actionable suggestions to improve clarity, reduce cognitive load, and align the
+                            walkthroughs better with user needs</li>
+                    </ul>
+                </div>
 
                 <figure>
-                    <img src="../images/sketch.png" alt="">
+                                       <img src="../images/sketch.png" alt="" class="zoomable">
+                    <figcaption>Sketch</figcaption>
                 </figure>
             </article>
 
             <article class="project-illustration">
-                <h2>ILLUSTRATIONS</h2>
-                <p> To illustrate the tutorial, I designed a concept using a book example, which would be easy
-                    for
-                    everyone to understand. With this concept in mind, I created low-fidelity sketches and
-                    reviewed
-                    the
-                    flow to assess its effectiveness. Based on this review, I made adjustments to the flow and
-                    then
-                    presented it during a design review session. </p>
-
+                <div>
+                    <h2>ILLUSTRATIONS</h2>
+                    <p> To illustrate the tutorial, I designed a concept using a book example, which would be easy
+                        for
+                        everyone to understand. With this concept in mind, I created low-fidelity sketches and
+                        reviewed
+                        the
+                        flow to assess its effectiveness. Based on this review, I made adjustments to the flow and
+                        then
+                        presented it during a design review session. </p>
+                </div>
                 <figure>
-                    <img src="../images/Illustrations.png" alt="">
+                                       <figure>
+                        <img src="../images/Illustrations.png" alt="" class="zoomable">
+                    </figure>
 
                 </figure>
+
 
             </article>
 
@@ -251,31 +279,33 @@
 
                 <figure class="grid-container">
                     <div>
-                        <img src="../otimages/Introduction.png" alt="">
+                                               <figure>
+                            <img src="../otimages/Introduction.png" alt="" class="zoomable">
+                        </figure>
                     </div>
                     <div>
-                        <img src="../otimages/Progress 1.png" alt="">
+                        <img src="../otimages/Progress 1.png" alt="" class="zoomable">
                     </div>
                     <div>
-                        <img src="../otimages/Step 1.png" alt="">
+                        <img src="../otimages/Step 1.png" alt="" class="zoomable">
                     </div>
                     <div>
-                        <img src="../otimages/Step 2.png" alt="">
+                        <img src="../otimages/Step 2.png" alt="" class="zoomable">
                     </div>
                     <div>
-                        <img src="../otimages/Progress 2.png" alt="">
+                        <img src="../otimages/Progress 2.png" alt="" class="zoomable">
                     </div>
                     <div>
-                        <img src="../otimages/Step 3.png" alt="">
+                        <img src="../otimages/Step 3.png" alt="" class="zoomable">
                     </div>
                     <div>
-                        <img src="../otimages/Step 3.1.png" alt="">
+                        <img src="../otimages/Step 3.1.png" alt="" class="zoomable">
                     </div>
                     <div>
-                        <img src="../otimages/Progress 3.png" alt="">
+                        <img src="../otimages/Progress 3.png" alt="" class="zoomable">
                     </div>
                     <div>
-                        <img src="../otimages/Finish and subscription.png" alt="">
+                        <img src="../otimages/Finish and subscription.png" alt="" class="zoomable">
                     </div>
                 </figure>
 
@@ -294,6 +324,11 @@
             </article>
 
         </section>
+
+        <div id="lightbox">
+            <img id="lightbox-img">
+        </div>
+
 
     </main>
 
@@ -315,7 +350,10 @@
         <p class="footer-copy">© 2025 Your Name. All rights reserved.</p>
     </footer>
 
-    <script src="/script.js"></script>
+
+    <script src="../script.js"></script>
+    <script src="../dbscript.js"></script>
+
 </body>
 
 
