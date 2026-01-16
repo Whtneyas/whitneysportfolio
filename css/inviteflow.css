@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     scroll-behavior: smooth;
     /* font-family: 'poppins'; */
 
@@ -35,9 +36,10 @@ body {
 }
 
 .project-header h1 {
-    font-size:2rem;
+    font-size: 1.5rem;
     color: #c5620b;
     text-align: center;
+    font-family: Merriweather;
 
 
 }
@@ -151,6 +153,13 @@ h2 {
     /* Lighter than 400, but still readable */
 }
 
+.two-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+
 
 
 .design-process ul {
@@ -163,6 +172,16 @@ h2 {
     color: #c5620b
 }
 
+
+.design-process ul li {
+    color: #c5620b;
+    list-style: decimal-leading-zero;
+}
+
+.design-process ul li a {
+    text-decoration: none;
+    color: #c5620b;
+}
 
 
 .design-process h2 {
@@ -236,7 +255,9 @@ figcaption {
 }
 
 .hkj-method figure img {
-    max-width: 100%
+    max-width: 100%;
+
+
 }
 
 .access-level ul {
@@ -280,6 +301,7 @@ figcaption {
     max-height: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
+    background-color: white;
 }
 
 .lessons ul {
@@ -341,14 +363,19 @@ figcaption {
 
     .two-columns {
         display: flex;
-        gap: 2em;
-
-
-    }
-
-    .two-columns {
+        flex-direction: row;
+        padding: 2em;
         line-height: 1.6,
+
+
+
     }
+
+    .project-header h1 {
+        font-size: 2rem;
+
+    }
+
 
 
     .design-challenge h2 {
@@ -371,7 +398,7 @@ figcaption {
     .design-process ul {
         display: flex;
         flex-direction: row;
-        gap: 4m;
+        gap: 4em;
     }
 
     .design-process ul li {
@@ -476,6 +503,11 @@ figcaption {
         padding: 2em 3em;
     }
 
+
+    .hkj-method figure img {
+        width: 100%;
+    }
+
     .heading {
         text-align: center;
         font-size: 1.5rem;
@@ -553,7 +585,7 @@ figcaption {
     .validation {
         display: flex;
         flex-direction: column;
-        gap:5em;
+        gap: 5em;
 
     }
 

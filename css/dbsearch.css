@@ -5,8 +5,17 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       scroll-behavior: smooth;
       /* font-family: 'poppins'; */
+      line-height: 1.6;
 
 }
+
+.project-header h1 {
+      font-size: 1.8rem;
+      color: #c5620b;
+      text-align: center;
+      font-family: Merriweather;
+}
+
 
 
 
@@ -15,8 +24,6 @@ main {
       display: flex;
       flex-direction: column;
       gap: 7em
-
-
 }
 
 .project-header {
@@ -30,13 +37,6 @@ main {
       background: linear-gradient(135deg, #f8e6c1 0%, #f7eaf7 100%);
 }
 
-.project-header h1 {
-      font-size: 3rem;
-      color: #c5620b;
-      text-align: center;
-
-
-}
 
 .read-more-btn {
       background-color: white;
@@ -176,7 +176,7 @@ h4 {
 h4 {
       font-size: 1.2rem;
       font-weight: bold;
-   
+
 }
 
 .filter-structures {
@@ -250,6 +250,9 @@ h4 {
             margin: 2em;
             padding: 4em
       }
+      .project-header h1 {
+            font-size: 2rem;
+      }
 
       .project-img {
             display: flex;
@@ -274,6 +277,7 @@ h4 {
 
 
       }
+
 
       main {
             display: flex;

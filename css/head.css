@@ -19,6 +19,7 @@ header {
     z-index: 999;
 
 
+
     /* background: #c5620b; */
 }
 
@@ -65,12 +66,11 @@ header figure img {
 nav.navbar {
     display: flex;
     justify-content: space-between;
-    /* <-- change here */
     align-items: center;
     width: 100%;
-    /* ensure full-width container */
     box-sizing: border-box;
     background-color: rgb(68, 5, 68);
+    padding:0 1em;
 }
 
 .nav-menu {
