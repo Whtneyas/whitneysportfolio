@@ -27,28 +27,32 @@ header {
 header figure {
   display: flex;
   flex-direction: column-reverse;
-  max-width:100;
+  max-width: 100;
   padding: 2em;
 
 }
 
-header figure div{
+header figure div {
   display: flex;
-  max-width:15%;
+  max-width: 15%;
   justify-content: center;
+  
+
 
 
 }
-  
+
 
 header figure h1 {
   color: white;
   order: 2;
   text-align: left;
   font-size: 14px;
-  text-decoration: overline;
-
   
+
+
+
+
 }
 
 
@@ -201,6 +205,7 @@ header figure img {
     justify-content: space-between;
     align-items: center;
     padding: 0em 1em;
+    text-decoration: none;
 
 
   }
